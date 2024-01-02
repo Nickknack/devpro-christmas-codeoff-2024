@@ -21,6 +21,7 @@
 
 - Change the type of the nicenessRating parameter to the `NicenessRating` enum type.
 - refactor the nicenessRating `if-else-if` checks to a switch statement.
+- refactor the totalCoal conditional to fail-fast and return as soon as the coal total is known.
 - extract the coalCoefficient conditional into its own method named `getCoalCoefficient`
 - extract the totalCoal conditional into its own method named `getTotalCoal`
 
