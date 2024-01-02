@@ -25,6 +25,3 @@ export class CoalCalculator {
         return totalCoal;
     }
 }
-
-
-

@@ -9,21 +9,47 @@
 
 #### 1. Niceness Rating Enum
 
-- create a `NicenessRating` enum with 4 values:
-  - `"NICE"`
-  - `"VERY_NICE"`
-  - `"NAUGHTY"`
-  - `"VERY_NAUGHTY"`
+- create a `NicenessRating.ts` file with am exported `NicenessRating` enum with 4 values:
+  - `NICE`
+  - `VERY_NICE`
+  - `NAUGHTY`
+  - `VERY_NAUGHTY`
 - Replace all references to these hardcoded strings to enum references. 
 - Any variable that contains strings that are niceness ratings should be typed to the new enum.
 
-#### 2. CoalCalculator
+#### 2. CoalCalculator.ts
 
 - Change the type of the nicenessRating parameter to the `NicenessRating` enum type.
-- refactor the nicenessRating `if-else-if` checks
+- refactor the nicenessRating `if-else-if` checks to a switch statement.
+- refactor the totalCoal conditional to not use `else` or `else-if` and return as soon as the coal total is known.
+- extract the coalCoefficient conditional into its own method named `getCoalCoefficient`
+- extract the totalCoal conditional into its own method named `getTotalCoal`
 
+#### 3. GiftThing.ts
 
-#### 3. Java to JSON
+- rename the `GiftThing` class to `GiftCalculator`.
+- rename the `GiftThing.ts` file to `GiftCalculator.ts`.
+- Refactor the `getGiftThing` method to not use `else` or `else-if` and return as soon as the gift total is known.
+- Rename the `getGiftThing` method to `getGiftTotal`. 
+
+#### 4. Person interface
+
+- create a `Person.ts` file and create and export a `Person` interface containing the following fields:
+  - `name` of type `string`
+  - `age` of type `number`
+  - `nicenessRating` of type `NicenessRating`
+- Update the `printGiftTotal` method in `main.ts` to take in a single `Person` argument instead of 3 seperate arguments. 
+
+#### 5. Nice List
+
+- Create a `NiceList.ts` file and create and export a `NiceList` class with a method called `getList` that returns an array of `Person`. Move the hard-coded data in `main.ts` into this method.
+- Update main to use the new `NiceList` to populate `santasList`.
+
+#### 6. Reorganize
+- Create a `calculator` directory under `src` and move `CoalCalculator.ts` & `GiftCalculator.ts` into this directory. 
+- Create a `model` directory under `src` and move `Person.ts` & `NicenessRating.ts` into the `model` directory.
+
+#### 7. Java to JSON
 
 - Manually convert the `InviceListDto` class in `JavaClass.java` in to a valid JSON object with the same schema. Include the the following values with the JSON object:
 ```
