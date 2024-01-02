@@ -40,5 +40,9 @@
 
 #### Nice List
 
-- create a `NiceList.ts` file and create and export a `NiceList` class with a method called `getList` that returns an array of `Person`. Move the hard-coded data in `main.ts` into this method.
-- update main to use the new `NiceList` to populate `santasList`.
+- Create a `NiceList.ts` file and create and export a `NiceList` class with a method called `getList` that returns an array of `Person`. Move the hard-coded data in `main.ts` into this method.
+- Update main to use the new `NiceList` to populate `santasList`.
+
+#### Reorganize
+- Create a `calculator` directory under `src` and move `CoalCalculator.ts` & `GiftCalculator.ts` into this directory. 
+- Create a `model` directory under `src` and move `Person.ts` into the `model` directory.
