@@ -21,14 +21,14 @@
 
 - Change the type of the nicenessRating parameter to the `NicenessRating` enum type.
 - refactor the nicenessRating `if-else-if` checks to a switch statement.
-- refactor the totalCoal conditional to fail-fast and return as soon as the coal total is known.
+- refactor the totalCoal conditional to not use `else` or `else-if` and return as soon as the coal total is known.
 - extract the coalCoefficient conditional into its own method named `getCoalCoefficient`
 - extract the totalCoal conditional into its own method named `getTotalCoal`
 
 #### GiftThing.ts
 
 - rename the `GiftThing` class to `GiftCalculator`.
-- Refactor the `getGiftThing` method to fail-fast and return as soon as the gift total is known.
+- Refactor the `getGiftThing` method to not use `else` or `else-if` and return as soon as the gift total is known.
 - Rename the `getGiftThing` method to `getGiftTotal`. 
 
 #### Person interface
