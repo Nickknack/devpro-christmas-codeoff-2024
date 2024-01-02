@@ -9,7 +9,7 @@
 
 #### Niceness Rating Enum
 
-- create a `NicenessRating` enum with 4 values:
+- create a `NicenessRating.ts` file with a `NicenessRating` enum with 4 values:
   - `"NICE"`
   - `"VERY_NICE"`
   - `"NAUGHTY"`
@@ -45,4 +45,4 @@
 
 #### Reorganize
 - Create a `calculator` directory under `src` and move `CoalCalculator.ts` & `GiftCalculator.ts` into this directory. 
-- Create a `model` directory under `src` and move `Person.ts` into the `model` directory.
+- Create a `model` directory under `src` and move `Person.ts` & `NicenessRating.ts` into the `model` directory.
