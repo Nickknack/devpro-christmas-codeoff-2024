@@ -9,11 +9,11 @@
 
 #### Niceness Rating Enum
 
-- create a `NicenessRating.ts` file with a `NicenessRating` enum with 4 values:
-  - `"NICE"`
-  - `"VERY_NICE"`
-  - `"NAUGHTY"`
-  - `"VERY_NAUGHTY"`
+- create a `NicenessRating.ts` file with am exported `NicenessRating` enum with 4 values:
+  - `NICE`
+  - `VERY_NICE`
+  - `NAUGHTY`
+  - `VERY_NAUGHTY`
 - Replace all references to these hardcoded strings to enum references. 
 - Any variable that contains strings that are niceness ratings should be typed to the new enum.
 
@@ -28,6 +28,7 @@
 #### GiftThing.ts
 
 - rename the `GiftThing` class to `GiftCalculator`.
+- rename the `GiftThing.ts` file to `GiftCalculator.ts`.
 - Refactor the `getGiftThing` method to not use `else` or `else-if` and return as soon as the gift total is known.
 - Rename the `getGiftThing` method to `getGiftTotal`. 
 
