@@ -18,7 +18,7 @@ import java.util.UUID;
 @Accessors(chain = true)
 public class InvoiceListDto {
 	private List<InvoiceDto> invoices;
-	private listName;
+	private String listName;
 }
 
 @Data
