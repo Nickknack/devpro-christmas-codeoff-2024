@@ -1,36 +1,44 @@
 # devpro-christmas-codeoff-2023
 
+## Instructions
+
+Welcome to Nick and Ian's DevPro Christmas Code-Off 2023! We will review these instructions with you ***before*** starting the timer. 
+
+**Every mistake** in your solution will **add 10 seconds to your time!** Also, if your solution fails to produce the **exact output for part 1** will result in a **1 minute penalty**.
+
+#### GL;HF, and may the best DevPro'er win!
+
 ## How to run
 
 - `npm install`
 - `npm start`
 
-### Objectives
+----
+
+### PART 1: TypeScript Refactor
 
 #### 1. Niceness Rating Enum
 
-- create a `NicenessRating.ts` file with am exported `NicenessRating` enum with 4 values:
+- Create `NicenessRating.ts` exporting a `NicenessRating` enum with 4 values:
   - `NICE`
   - `VERY_NICE`
   - `NAUGHTY`
   - `VERY_NAUGHTY`
-- Replace all references to these hardcoded strings to enum references. 
-- Any variable that contains strings that are niceness ratings should be typed to the new enum.
+- Convert hardcoded strings to enum references in `main.ts` and `CoalCalculator.ts`. 
+- Refactor all nicenessRating function arguments to use the new enum.
 
 #### 2. CoalCalculator.ts
 
-- Change the type of the nicenessRating parameter to the `NicenessRating` enum type.
-- refactor the nicenessRating `if-else-if` checks to a switch statement.
-- refactor the totalCoal conditional to not use `else` or `else-if` and return as soon as the coal total is known.
-- extract the coalCoefficient conditional into its own method named `getCoalCoefficient`
-- extract the totalCoal conditional into its own method named `getTotalCoal`
+- Lines 7-15, refactor nicenessRating `if-else-if` to a switch statement.
+- Lines 17-23, remove `else` statements and return **totalCoal** as soon as it is known.
+- Extract **coalCoefficient** and **totalCoal** calculations into separate methods named `getCoalCoefficient` and `getTotalCoal`.
 
 #### 3. GiftThing.ts
 
-- rename the `GiftThing` class to `GiftCalculator`.
-- rename the `GiftThing.ts` file to `GiftCalculator.ts`.
-- Refactor the `getGiftThing` method to not use `else` or `else-if` and return as soon as the gift total is known.
-- Rename the `getGiftThing` method to `getGiftTotal`. 
+- Rename the `GiftThing` class to `GiftCalculator`.
+- Rename the `GiftThing.ts` file to `GiftCalculator.ts`.
+- Remove `else` statements in `getGiftThing` and return **giftTotal** as soon as it is known. 
+- Rename the `getGiftThing` method to `getGiftTotal`.
 
 #### 4. Person interface
 
@@ -42,16 +50,38 @@
 
 #### 5. Nice List
 
-- Create a `NiceList.ts` file and create and export a `NiceList` class with a method called `getList` that returns an array of `Person`. Move the hard-coded data in `main.ts` into this method.
-- Update main to use the new `NiceList` to populate `santasList`.
+- Create and export a new `NiceList` class in a new `NiceList.ts` file with one method called `getList` returning an array of `Person`. Return the hard-coded values in `santasList` from `main.ts` from this method.
+- Update `main.ts` to use the new function to populate `santasList`.
 
 #### 6. Reorganize
-- Create a `calculator` directory under `src` and move `CoalCalculator.ts` & `GiftCalculator.ts` into this directory. 
-- Create a `model` directory under `src` and move `Person.ts` & `NicenessRating.ts` into the `model` directory.
+- Move `CoalCalculator.ts` and `GiftCalculator.ts` into a new `calculator` directory under `src`. 
+- Move `Person.ts` and `NicenessRating.ts` into a new `model` directory under `src`.
 
-#### 7. Java to JSON
 
-- Manually convert the `InviceListDto` class in `JavaClass.java` in to a valid JSON object with the same schema. Include the the following values with the JSON object:
+#### Confirm output with `npm start`: 
+
+```
+Nick recieves: 1 gifts
+Nick Jr. recieves: 2 gifts
+Baby Nick recieves: 3 gifts
+Ian recieves: 1 gifts
+Ian Jr. recieves: 2 gifts
+Baby Ian recieves: 3 gifts
+Rawley recieves: 4 lumps of coal
+Rawley Jr. recieves: 1 lumps of coal
+Baby Rawley recieves: 1 gifts
+Tim recieves: 9 lumps of coal
+Tim Jr. recieves: 4 lumps of coal
+Baby Tim recieves: 1 lumps of coal
+```
+
+----
+
+### PART 2: Java to JSON
+
+Manually convert the `InviceListDto` class in `JavaClass.java` into a **valid JSON** object with the same schema. 
+
+Include the the following values with the JSON object:
 ```
 { 
   [ 
