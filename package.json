@@ -22,8 +22,8 @@
   "homepage": "https://github.com/Nickknack/devpro-christmas-codeoff-2023#readme",
   "devDependencies": {
     "ts-loader": "^9.5.1",
-    "typescript": "^5.3.3",
-    "webpack": "^5.89.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   }
 }

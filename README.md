@@ -1,8 +1,8 @@
-# devpro-christmas-codeoff-2023
+# devpro-christmas-codeoff-2024
 
 ## Instructions
 
-Welcome to Nick and Ian's DevPro Christmas Code-Off 2023! We will review these instructions with you ***before*** starting the timer. 
+Welcome to Nick and Ian's DevPro Christmas Code-Off 2024! We will review these instructions with you ***before*** starting the timer.
 
 **Every mistake** in your solution will **add 10 seconds to your time!** Also, if your solution fails to produce the **exact output for part 1** will result in a **1 minute penalty**.
 
@@ -79,9 +79,10 @@ Baby Tim recieves: 1 lumps of coal
 
 ### PART 2: Java to JSON
 
-Manually convert the `InviceListDto` class in `JavaClass.java` into a **valid JSON** object with the same schema. 
+Manually convert the `InvoiceListDto` class in `JavaClass.java` into a **valid JSON** object with the same schema.
 
 Include the the following values with the JSON object:
+
 ```
 { 
   [ 
