@@ -4,7 +4,7 @@
 
 Welcome to Nick and Ian's DevPro Christmas Code-Off 2024! We will review these instructions with you ***before*** starting the timer.
 
-**Every mistake** in your solution will **add 10 seconds to your time!** Also, if your solution fails to produce the **exact output for part 1** will result in a **1 minute penalty**.
+**Every mistake** in your solution will **add 1 minute to your time!** Also, if your solution fails to produce the **exact output for part 1** will result in a **5 minute penalty**.
 
 #### GL;HF, and may the best DevPro'er win!
 
